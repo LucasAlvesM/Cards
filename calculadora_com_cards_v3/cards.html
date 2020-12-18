@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/cards.js"></script>
+    <title>Cards</title>
+</head>
+<body>
+    <span class="Titulo">Super Calculadora com Cards</span>
+    <div class="container">
+        <div class="supercalculadora"> 
+            <!--4 Operações-->
+            <h1>As Quatro Operações</h1>
+            <span class="textosecund">Soma, Subtração, Multiplicação e Divisão</span><br><br>
+            <input type="number"  id="n1" placeholder="Digite um número: "><br>
+            <input type="number"  id="n2" placeholder="Digite um número: "><br>
+            <button class="btn" onclick="calcular(event)">Soma</button>
+            <button class="btn" onclick="calcular(event)">Subtração</button>
+            <button class="btn" onclick="calcular(event)">Multiplicação</button>
+            <button class="btn" onclick="calcular(event)">Divisão</button><br><br>
+            <strong>A Operação desejada resulta em:</strong> <span id="resultado"></span>
+
+        </div>
+
+        <!--Conversão de Temperaturas-->
+        <div class="supercalculadora">
+            <h1>Conversão de Temperatura</h1>
+            <span class="textosecund">Converte Celsius para Fahrenheit e Fahrenheit para Celsius</span><br><br>
+            <input type="number" id="numero2" placeholder="Digite a temperatura da sua Cidade:"><br>
+            <button class="btn" onclick="graus_temp(event)">Fahrenheit para Celsius</button>
+            <button class="btn" onclick="graus_temp(event)">Celsius para Fahrenheit</button><br><br>
+            <strong>Temperatura atual da sua Cidade é:</strong> <span id="resultado2"></span>
+        </div>
+
+        <!--Par ou Ímpar-->
+        <div class="supercalculadora">
+            <h1>Par ou Ímpar</h1>
+            <span class="textosecund">Descobre se o número digitado é Par ou Ímpar</span><br><br>
+            <input type="number" id="numero3" placeholder="Digite um número para verificar se é Ímpar ou Par"><br>
+            <button class="btn" onclick="parImpar(event)">Verificar número</button><br><br>
+            <strong>Este número é: </strong> <span id="resultado3"></span>
+        </div>
+
+        <!--Tipo de Triângulo-->
+        <div class="supercalculadora">
+            <h1>Tipo de Triângulo</h1>
+            <span class="textosecund">Informe valores e descubra o tipo de triângulo que ele seria</span><br><br>
+            <input type="number" id="numero4" placeholder="Informe o Lado A do triângulo: "><br>
+            <input type="number" id="numero5" placeholder="Informe o Lado B do triângulo: "><br>
+            <input type="number" id="numero6" placeholder="Informe o Lado C do triângulo: "><br>
+            <button class="btn" onclick="triangulo(event)">Verificar o tipo de Triângulo</button><br><br>
+            <strong>Os valores digitados retornam um Triângulo: </strong> <span id="resultado4"></span>
+        </div>
+
+        <!--Conversor de Moedas-->
+        <div class="supercalculadora">
+            <h1>Conversor de Real para Dólar</h1>
+            <span class="textosecund">Digite um valor em Real e saiba quanto vale esse mesmo valor em Dólar</span><br><br>
+            <input type="number" id="numero7" placeholder="Informe o valor (Real): "><br>
+            <button class="btn" onclick="conversor_moedas(event)">Converter</button><br><br>
+            <strong>Valor convertido em Dólar: </strong> <span id="resultado5"></span>
+        </div>
+
+        <!--EquaçãoDoSegundoGrau-->
+        <div class="supercalculadora">
+            <h1>Equação do 2º Grau</h1>
+            <span class="textosecund">Informe três valores e descubra as raízes da sua Equação</span><br><br>
+            <input type="number" id="numero8" placeholder="Informe um valor para A: "><br>
+            <input type="number" id="numero9" placeholder="Informe um valor para B: "><br>
+            <input type="number" id="numero10" placeholder="Informe um valor para C: "><br>
+            <button class="btn" onclick="equacao2grau(event)">Efetuar o cálculo</button><br><br>
+            <strong>Essa Equação resulta em: </strong> <span id="resultado6"></span>
+        </div>
+
+        <!--Notas Bimestrais-->
+        <div class="supercalculadora">
+            <h1>Passei de ano?</h1>
+            <span class="textosecund">Digite suas notas bimestrais e descubra se passou de ano</span><br><br>
+            <input type="number" id="numero11" placeholder="Digite a sua primeira nota: "><br>
+            <input type="number" id="numero12" placeholder="Digite a sua segunda nota: "><br>
+            <input type="number" id="numero13" placeholder="Digite a sua terceira nota: "><br>
+            <input type="number" id="numero14" placeholder="Digite a sua quarta nota: "><br>
+            <button class="btn" onclick="notas(event)">Conferir</button><br><br>
+            <strong>Sua situação: </strong> <span id="resultado7"></span>
+        </div>
+
+        <!--Tabuada-->
+        <div class="supercalculadora">
+            <h1>Fatorial</h1>
+            <span class="textosecund">Digite um número para saber o resultado da sua Fatoração</span><br><br>
+            <input type="number" id="numero15" placeholder="Digite um número: "><br>
+            <button class="btn" onclick="fatorial(event)">Fatorar</button><br><br>
+            <strong>Resultado da Fatoração: </strong> <span id="resultado8"></span>
+        </div>
+
+        <div class="supercalculadora">
+            <h1>Validador de CPF</h1>
+            <span class="textosecund">Digite seu número de CPF e verifique onde ele foi emitido</span><br><br>
+            <input id="entrada" type="text" placeholder="123.456.789-00"><br>
+            <button class="btn" onclick="Verificarcpf(event)">Verificar CPF</button><br><br>
+            <strong>Seu CPF foi emitido em: </strong> <span id="saida"></span>
+        </div>
+
+        <!--Ano Bissexto-->
+        <div class="supercalculadora">
+            <h1>Quais os Anos Bissextos?</h1>
+            <span class="textosecund">Digite um ano para saber se ele é Bissexto ou não.<br>Obs: Anos Bissextos são aqueles múltiplos por 4, ou seja, a cada quatro anos temos um Ano Bissexto</span><br><br>
+            <input type="number" id="numero16" placeholder="Digite um ano: "><br>
+            <button class="btn" onclick="bissexto(event)">Verificar</button>
+            <strong><span id="resultado9"></span></strong>
+        </div>
+
+
+
+    </div>
+</body>
+</html>
