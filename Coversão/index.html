@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/main.css">
+    <script src ="./js/codigo.js"></script>
+    <title>Exercícios</title>
+</head>
+<body>
+    <span class="Titulo">Super calculadora</span>
+    <div class="container">
+        <h1>Quatro Operações</h1>
+        <div class="supercalculadora">
+            <input type="number" id="numero1" placeholder="Digite um numero"><br>
+            <input type="number" id="numero2" placeholder="Digite um numero"><br>
+            <button class="btn" onclick="calcular(event)">+</button>
+            <button class="btn" onclick="calcular(event)">-</button>
+            <button class="btn" onclick="calcular(event)">*</button>
+            <button class="btn" onclick="calcular(event)">/</button><br>
+            Resultado: <span id="resultado"></span>
+        </div>
+        <h1>Conversão de Temeraturas</h1>
+        <div class="supercalculadora">
+            <input type="number" id="numero4" placeholder="Digite um numero"><br>
+            <button class="btn" onclick="graus(event)">farenheit</button>
+            <button class="btn" onclick="graus(event)">celsius</button><br>
+            Resultado: <span id="resultado4"></span>
+        </div>
+    </div>
+    <h1>Par e Impar</h1>
+    <div class="parimpar">
+        <div class="supercalculadora">
+        <input type="Number" id="numero" placeholder="Digite um numero para verificar se é par ou impar">
+        <button class="btn" onclick="verificar(event)">verificar</button><br>
+        Resultado: <span id="resultado5"></span>
+    </div>
+    </div>
+    <h1>Convertendo dolar para real</h1>
+    <div class="dolar">
+        <div class="supercalculadora">
+        <input type="number" id="dolar" placeholder="Conversão de dolar para real">
+        <button class="btn" onclick="conversao(event)">converter</button><br>
+        Resultado: <span id="resultado6"></span>
+    </div>
+</div>
+    <h1>Triângulo</h1>
+    <div class="triangulo">
+        <div class="supercalculadora">
+        <input type="number" id="a" placeholder="digite o lado A"><br>
+        <input type="number" id="b" placeholder="digite o lado B"><br>
+        <input type="number" id="c" placeholder="digite o lado C"><br>
+        <button class="btn" onclick="triangulo(event)">Verificar qual é o triangulo</button><br>
+        Resultado: <span id="resultado7"></span>
+    </div>
+</div>
+    <h1>Notas Bimestrais</h1>
+    <div class="notas">
+        <div class="supercalculadora">
+        <input type="number" id="n1" placeholder="digite a primeira nota"><br>
+        <input type="number" id="n2" placeholder="digite a segunda nota"><br>
+        <input type="number" id="n3" placeholder="digite a terceira nota"><br>
+        <input type="number" id="n4" placeholder="digite a quarta nota"><br>
+        <button class="btn" onclick="notas(event)">Média Final</button><br>
+        Resultado: <span id="resultado8"></span>
+    </div>
+</div>
+    <h1>Fatorial</h1>
+    <div class="fatorial">
+        <div class="supercalculadora">
+        <input type="number" id="num6" placeholder="Digite um número inteiro qualquer"><br>
+        <button class="btn" onclick="fatorial(event)">Valor do fatorial</button><br>
+        Resultado: <span id="resultado9"></span> 
+    </div>  
+</div>   
+</div>	
+</body>
+</html>
