@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./calculadora.js"></script>
+    <script src="./calculadora.css"></script>
+    <title>Calculadora</title>
+</head>
+<body>
+    <div class="container">
+        <div class="calculadora">
+            <h2>Calculadora</h2>
+            <input type="number" id="numero1" placeholder="Digite um número: "><br>
+            <input type="number" id="numero2" placeholder="Digite um número: "><br>
+            <button onclick="calcular(event)">+</button>
+            <button onclick="calcular(event)">-</button>
+            <button onclick="calcular(event)">*</button>
+            <button onclick="calcular(event)">/</button><br>
+            Resultado: <span id="resultado"></span>
+        </div>
+        
+        <div class="calculo da Média">
+            
+            <h2>Calculo da Média</h2>
+
+            nota1 = parseFloat(prompt("Digite a primeira nota bimestral: "));
+            nota2 = parseFloat(prompt("Digite a segunda nota bimestral: "));
+            nota3 = parseFloat(prompt("Digite a terceira nota bimestral: "));
+            nota4 = parseFloat(prompt("Digite a quarta nota bimestral: "));
+
+        </div>
+    </div>
+</body>
+</html>
