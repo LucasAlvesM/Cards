@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/calculadora.css">
+    <script src ="js/calculadora.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="calculadora">
+            <h1>Numeros</h1>
+            <input type="number" id="numero1" placeholder="Digite o primeiro numero"><br>
+            <input type="number" id="numero2" placeholder="Digite o segundo numero"><br>
+            <button class="btn" onclick="calcular(event)">+</button>
+            <button class="btn" onclick="calcular(event)">-</button>
+            <button class="btn" onclick="calcular(event)">*</button>
+            <button class="btn" onclick="calcular(event)">/</button><br>
+            Resultado: <span id="resultado"></span>
+        </div>
+        <!-- raiz-->
+        <div class="calculadora">
+            <h1>Raiz</h1>
+            <input type="number" id="numero3" placeholder="Raiz de um numero"><br>
+            <button class="btn" onclick="raizQuadrada(event)">raiz</button><br>
+            Resultado: <span id="resultado3"></span>
+        </div>
+        <!-- graus-->
+        <div class="calculadora">
+            <h1>Graus</h1>
+            <input type="number" id="numero4" placeholder="Digita os graus ai"><br>
+            <button class="btn" onclick="graus(event)">farenheit</button>
+            <button class="btn" onclick="graus(event)">celsius</button><br>
+            Resultado: <span id="resultado4"></span>
+        </div>
+        <div class="calculadora">
+            <h1>Cotação</h1>
+            <input type="number" id="numero5" placeholder="Digite o valor"><br>
+            <button class="btn" onclick="cotacao(event)">dolar</button>
+            <button class="btn" onclick="cotacao(event)">real</button><br>
+            Resultado: <span id="resultado5"></span>
+        </div>
+        <div class="calculadora">
+            <h1>Par ou Impar</h1>
+            <input type="number" id="numero6" placeholder="Digite um numero"><br>
+            <button class="btn" onclick="parImpar(event)">Verificar</button><br>
+            Resultado: <span id="resultadoParImpar"></span>
+        </div>
+    
+        
+        <div class="calculadora">
+            <h1>Triangulo</h1>
+            <input type="number" id="numero9" placeholder="Lado A"><br>
+            <input type="number" id="numero10" placeholder="Lado B"><br>
+            <input type="number" id="numero11" placeholder="Lado C"><br>
+            <button class="btn" onclick="triangulo(event)">Verificar</button><br>
+            Resultado: <span id="resultadoTriangulo"></span>
+        </div>
+        <div class="calculadora">
+            <h1>Fatorial</h1>
+            <input type="number" id="numeroF" placeholder="Digite um numero"><br>
+            <button class="btn" onclick="fatorial(event)">Fatorial</button><br>
+            Resultado: <span id="rfatorial"></span>
+        </div>
+        <div class="calculadora">
+            <h1>verificadorCPF</h1>
+            
+            <input id="entrada" type="text" placeholder="123.456.789-00"><br>
+            <button class="btn" onclick="verificaCPF(event)">Verificar CPF</button><br><br>
+            Resultado:<span id="resultadoCPF"></span>
+        </div>
+     
+        
+        
+    </div>
+    
+</body>
+</html>
