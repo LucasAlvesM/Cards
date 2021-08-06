@@ -31,69 +31,88 @@ function calcular(event) {
     }
     document.getElementById("resultado").textContent = resultado
 }
+
+function raizQuadrada(event){
+    let num3 = parseFloat(document.getElementById("numero3").value)
+    let operacao2 =  event.target.textContent
+    let resultado2
+
+    switch (operacao2) {
+        case "raiz":
+            console.log("raiz")
+            resultado2 = num3 * num3           
+            break;
+    
+        default:
+            console.log("Não é uma operacão")
+            break;
+    }
+    document.getElementById("resultado3").textContent = resultado3
+}
+
 function graus(event) {
     let num4 = parseFloat(document.getElementById("numero4").value)
     let operacao4 = event.target.textContent
-    let resultado4
+    let resultado3
 
     switch (operacao4) {
         case "celsius":
             console.log("celsius")
-            resultado4 = (num4 - 32) * 5 / 9
+            resultado3 = (num4 - 32) * 5 / 9
             break;
 
         case "farenheit":
             console.log("farenheit")
-            resultado4 = (num4 * 1.8) + 32
+            resultado3 = (num4 * 1.8) + 32
             break;
 
         default:
             console.log("Não é uma operacão")
             break;
     }
+    document.getElementById("resultado3").textContent = resultado3
+}
+function conversao() {
+    let num5 = parseFloat(document.getElementById("numero5").value)
+    let taxa = 5.24;
+    let resultado4
+
+    resultado4 = num5 / taxa;
+
     document.getElementById("resultado4").textContent = resultado4
 }
-function verificar(event) {
-    let num = parseInt(document.getElementById("numero").value)
+function verificar() {
+    let num6 = parseInt(document.getElementById("numero6").value)
     let resultado5
 
-    if (num % 2 == 0) {
+    if (num6 % 2 == 0) {
         resultado5 = ("Par")
     } else {
         resultado5 = ("Impar")
     }
     document.getElementById("resultado5").textContent = resultado5
 }
-function conversao(event) {
-    let dolar = parseFloat(document.getElementById("dolar").value)
-    let taxa = 5.08;
-    let resultado6
-
-    resultado6 = dolar / taxa;
-
-    document.getElementById("resultado6").textContent = resultado6
-}
-function triangulo(event) {
+function triangulo() {
     let a = parseInt(document.getElementById("a").value)
     let b = parseInt(document.getElementById("b").value)
     let c = parseInt(document.getElementById("c").value)
-    let resultado7
+    let resultado6
 
     if (a < b + c && b < a + c && c < a + b) {
     }
     if (a == b && b == c) {
 
-        resultado7 = ("Triâgulo Equilátero");
+        resultado6 = ("Triâgulo Equilátero");
     }
     else if (a == b || a == c || c == b) {
-        resultado7 = ("Triâgulo Isósceles");
+        resultado6 = ("Triâgulo Isósceles");
     }
     else {
-        resultado7 = ("Triângulo Escaleno");
+        resultado6 = ("Triângulo Escaleno");
     }
-    document.getElementById("resultado7").textContent = resultado7
+    document.getElementById("resultado6").textContent = resultado6
 }
-function notas(event) {
+function notas() {
     let n1 = parseInt(document.getElementById("n1").value)
     let n2 = parseInt(document.getElementById("n2").value)
     let n3 = parseInt(document.getElementById("n3").value)
@@ -115,7 +134,7 @@ function notas(event) {
 
     document.getElementById("resultado8").textContent = resultado8
 }
-function fatorial(event) {
+function fatorial() {
     let num6 = parseInt(document.getElementById("num6").value)
     let contador = 1;
     let fatorial = 1;
@@ -129,3 +148,47 @@ while (contador <= num6) {
 
  document.getElementById("resultado9").textContent = resultado9
 }
+
+function verificaCPF() {
+    let cpf = document.getElementById("entrance").value
+    // let very = event.target.textContent
+    let result 
+  
+    //Obtendo o terceiro segmento do CPF
+    let segment = parseInt(cpf.split("-")[0].split(".")[2].split("")[2])
+  
+    switch (segment) {
+      case 0:
+        result = "RS"
+        break;
+      case 1:
+        result = "DF, GO, MT, MS, TO"
+        break;
+      case 2:
+        result = "AM, PA, RR, AP, AC, RO"
+        break;
+      case 3:
+        result = "CE, MA, PI"
+        break;
+      case 4:
+        result = "PB, PE, AL, RN"
+        break;
+      case 5:
+        result = "BA, SE"
+        break;
+      case 6:
+        result = "MG"
+        break;
+      case 7:
+        result = "RJ, ES"
+        break;
+      case 8:
+        result = "SP"
+        break;
+      case 9:
+        result = "PR, SC"
+        break;
+    }
+  
+    document.getElementById("exit").textContent = result
+  }
